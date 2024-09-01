@@ -1,0 +1,571 @@
+:root {
+  --maincolor: #fff;
+}
+body {
+  overflow-x: hidden;
+}
+.underline,.nav-item .active{
+  position: relative;
+}
+.nav-item .active::before{
+  position: absolute;
+  width: 75%;
+  content: "";
+  top: 80%;
+  height: 2px;
+  background-color: #1c1c1c;
+}
+
+.underline::before{
+  position: absolute;
+  width: 0%;
+  content: "";
+  top: 80%;
+  height: 2px;
+  background-color: #1c1c1c;
+  transition: width 0.5s ease-in;
+}
+.nav-item:hover .underline::before{
+  width: 90%;
+
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(images/img01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#element {
+  color: var(--maincolor);
+  font-weight: 100;
+  font-size: 3.5rem;
+}
+.span-header {
+  color: var(--maincolor);
+  font-weight: 100;
+  font-size: 3.5rem;
+}
+#home .ico-header .parent-icon {
+  background-color: rgba(11, 10, 10, 0.534);
+  box-shadow: 0 0 0 3px #08090a;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+#home .ico-header .parent-icon i {
+  font-size: 14px;
+}
+#nav .brand-name {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18;
+}
+#home #header-anmation h1::after {
+  content: "";
+  animation: anmation 3s infinite;
+  color: #fff;
+  margin-left: 10px;
+}
+#home #header-anmation h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+@keyframes anmation {
+  0% {
+    content: "|";
+  }
+
+  3% {
+    content: "D|";
+  }
+
+  5% {
+    content: "De|";
+  }
+
+  7% {
+    content: "Dev|";
+  }
+
+  10% {
+    content: "Deve|";
+  }
+
+  13% {
+    content: "Devel|";
+  }
+
+  15% {
+    content: "Develo|";
+  }
+
+  17% {
+    content: "Develop|";
+  }
+
+  20% {
+    content: "Developm|";
+  }
+
+  24% {
+    content: "Developme|";
+  }
+
+  25% {
+    content: "Developmen|";
+  }
+
+  27% {
+    content: "Development|";
+  }
+
+  30% {
+    content: "Development|";
+  }
+
+  32% {
+    content: "Developmen|";
+  }
+
+  35% {
+    content: "Developme|";
+  }
+
+  37% {
+    content: "Develop|";
+  }
+
+  40% {
+    content: "Develo|";
+  }
+
+  42% {
+    content: "Devel|";
+  }
+
+  45% {
+    content: "Deve|";
+  }
+
+  47% {
+    content: "Dev|";
+  }
+
+  50% {
+    content: "De|";
+  }
+
+  52% {
+    content: "Des|";
+  }
+
+  55% {
+    content: "Desi|";
+  }
+
+  57% {
+    content: "Desig|";
+  }
+
+  60% {
+    content: "Design|";
+  }
+
+  62% {
+    content: "Designe|";
+  }
+
+  65% {
+    content: "Designer|";
+  }
+
+  67% {
+    content: "Designer|";
+  }
+
+  70% {
+    content: "Designe|";
+  }
+
+  72% {
+    content: "Design|";
+  }
+
+  75% {
+    content: "Desig|";
+  }
+
+  77% {
+    content: "Desi|";
+  }
+
+  80% {
+    content: "Des|";
+  }
+
+  82% {
+    content: "De|";
+  }
+
+  85% {
+    content: "Dev|";
+  }
+
+  87% {
+    content: "Deve|";
+  }
+
+  90% {
+    content: "Devel|";
+  }
+
+  92% {
+    content: "Develo|";
+  }
+
+  95% {
+    content: "Develop|";
+  }
+
+  97% {
+    content: "Develope|";
+  }
+
+  100% {
+    content: "Developer|";
+  }
+}
+#about .h-about h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30;
+}
+#about .h-about span {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
+#about .h-about p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+}
+#about .h-about span {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+}
+#about .progress .progress-editor h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+.progres .progress {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .btn-about .button-about {
+  background-color: #08090a;
+  color: #d2d7db;
+  border: 1px solid black;
+  width: 25%;
+  transition: all 1s;
+}
+#about .btn-about .button-about:hover {
+  background-color: white;
+  color: #08090a;
+}
+#about .back-img {
+  background-image: linear-gradient(to bottom, #ffffff, rgba(206, 202, 202, 0.084)), url(images/dots.png);
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+#about .back-img img {
+  position: relative;
+  top: 0;
+  width: 95%;
+  height: 95%;
+  left: 27px;
+}
+#SERVICES {
+  background-color: #f7f7f7;
+}
+#SERVICES .icon {
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+  color: #000;
+}
+#SERVICES .card :hover .icon {
+  color: #fff;
+  background-color: #000;
+}
+#SERVICES .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+}
+.title-head {
+  background-image: linear-gradient(to bottom, #ffffff, rgba(206, 202, 202, 0.084)), url(images/dots.png);
+  width: fit-content;
+
+}
+.title-head h3 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+}
+#part-four .inner h3 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+}
+#part-four .inner p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #748182;
+}
+#Testimonials .carousel-indicators [data-bs-target] {
+  background-color: #748182;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#Testimonials .parent-carsoul p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #748182;
+}
+#Testimonials .parent-carsoul h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+#Testimonials {
+  background-color: #f7f7f7;
+}
+#Testimonials .parent-carsoul h6 span {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 12px;
+  color: #748182;
+}
+#Portfolio {
+  background-color: #ffffff;
+}
+#Portfolio .card {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0px solid white;
+}
+#Portfolio .card .card-body {
+
+  background-color: #000;
+  position: absolute;
+
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #0b0909;
+  text-align: center;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+#Portfolio .card .card-body h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+#Portfolio .card:hover .card-body {
+  position: absolute;
+  opacity: 1;
+  transform: translateY(0px);
+}
+#Portfolio .btn-about .button-about {
+  background-color: #000;
+  color: #fff;
+  border: 0.5px solid black;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
+}
+#Portfolio .btn-about .button-about:hover {
+  background-color: #fff;
+  color: #000;
+}
+#Portfolio ul button {
+  background-color: transparent;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+#Our-Team .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+#Our-Team .card-body {
+  background-color: #5b5b5b;
+}
+#Our-Team .card-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+#Our-Team .parentimage:hover img {
+  transform: scale(1.15);
+  transition: all 0.5s ease-out;
+}
+#Our-Team .information-portfolio .parentimage {
+  overflow: hidden;
+}
+#Our-Team .parentimage {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0px solid white;
+}
+#Our-Team .parentimage .img-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #0b0909;
+  text-align: center;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+#Our-Team .information-portfolio :hover .img-overlay {
+  opacity: 1;
+  cursor: pointer;
+  animation: yousry 0.5s;
+  transition: all 0.5s ease-out;
+}
+@keyframes yousry {
+  0% {
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  100% {
+    transform: rotateY(0deg) scale(1, 1);
+  }
+}
+#Our-Team .btn-about .button-about{
+  background-color: #000;
+  color: #fff;
+  border: 0.5px solid black;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
+}
+#Our-Team{
+  background-color: #f7f7f7;
+}
+#Our-Team .btn-about .button-about:hover {
+  color: #000;
+  background-color: transparent;
+}
+#contact .btn-about .button-about {
+  background-color: #f7f7f7;
+  color: #000;
+  border: 0px solid black;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s;
+  font-size: 25px;
+}
+#contact .btn-about .button-about:hover{
+  color: #f7f7f7;
+  background-color: #000;
+}
+#contact .card-title{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+#contact .card-text {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  color: #748182;
+}
+#contact .button-contact{
+  background-color: #000;
+  color: #f7f7f7;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s;
+  font-size: 25px;
+}
+#contact .button-contact:hover{
+  color: #000;
+  background-color: #f7f7f7;
+}
+#fotter{
+  background-color: #000;
+}
+#Testimonials .parent-carsoul img{
+width: 150px;
+height: 150px;
+}
